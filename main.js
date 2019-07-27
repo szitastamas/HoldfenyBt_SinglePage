@@ -41,7 +41,11 @@ window.onscroll = function() {
         eventCards.style.transform="none";
     }
 
-    landingContainer.style.transform='translateY(' + (window.pageYOffset * 0.6) + 'px)';
+    if(window.innerWidth > 868){
+        landingContainer.style.transform='translateY(' + (window.pageYOffset * 0.6) + 'px)';
+    }else{
+        landingContainer.style.transform='translateY(' + (window.pageYOffset * 0.2) + 'px)';
+    }
 }
 
 function shutUp(){
