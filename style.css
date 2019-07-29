@@ -430,6 +430,7 @@ footer > a{
         margin: 0;
         grid-gap: .3rem;
         padding: 0;
+        background: linear-gradient(to right, rgba(0, 87, 26, 0.8), rgba(0, 87, 26, 0.2), rgba(0, 87, 26, 0.8));
     }
 
     .event-card{
@@ -487,5 +488,7 @@ footer > a{
         grid-gap: .3rem;
         padding: 0;
         transform: none;
+        background: linear-gradient(to right, rgba(0, 87, 26, 0.8), rgba(0, 87, 26, 0.2), rgba(0, 87, 26, 0.8));
     }
+
 }
