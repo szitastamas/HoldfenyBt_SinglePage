@@ -431,6 +431,8 @@ footer > a{
         margin: 0;
         grid-gap: .3rem;
         padding: 0;
+        opacity: 0;
+        transform: none;
         background: linear-gradient(to right, rgba(0, 87, 26, 0.55), rgba(0, 87, 26, 0.4), rgba(0, 87, 26, 0.2), rgba(0, 87, 26, 0.4), rgba(0, 87, 26, 0.55));
     }
 
