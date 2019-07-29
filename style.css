@@ -373,7 +373,7 @@ footer > a{
     .event-cards{
         top: 50%;
         left: 20%;
-        transform: none;
+        transform: translateY(100%);
         opacity: 0;
     }
 
