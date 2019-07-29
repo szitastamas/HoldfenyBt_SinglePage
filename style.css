@@ -330,6 +330,9 @@ footer > a{
     .about-text{
         display: block;
         text-align: justify;
+    }
+    
+    .about-us-container{
         opacity: 1;
         transform: none;
     }
