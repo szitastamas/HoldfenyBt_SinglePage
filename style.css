@@ -314,9 +314,24 @@ footer > a{
 /* MEDIA QUERIES */
 
 @media(max-width:868px){
+
+    #landing-section > .landing-bg{
+        background-attachment: initial;
+    }
+
+    .slider1{
+        background-attachment: initial;
+    }
+
+    .events-container{
+        background-attachment: initial;
+    }
+
     .about-text{
         display: block;
         text-align: justify;
+        opacity: 1;
+        transform: none;
     }
 
     .random-text{
