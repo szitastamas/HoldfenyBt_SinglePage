@@ -39,6 +39,7 @@ window.onscroll = function() {
 
     if(isInViewport(eventsContainer)){
         eventCards.style.transform="none";
+        eventCards.style.opacity="1";
     }
 
     if(window.innerWidth > 868){
