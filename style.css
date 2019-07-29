@@ -482,6 +482,7 @@ footer > a{
     }
 
     .event-cards{
+        opacity: 1;
         position: initial;
         height: 100%;
         width: 100%;
