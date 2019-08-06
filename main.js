@@ -12,9 +12,10 @@ function landing(element) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  landing(landingSubTitle),
-    landing(landingIcon),
-    landingTitle.forEach(item => item.classList.add('title-show'));
+  //landing(landingSubTitle);
+  landingSubTitle.classList.add('title-show');
+  landing(landingIcon);
+  landingTitle.forEach(item => item.classList.add('title-show'));
 });
 
 const isInViewport = el => {
