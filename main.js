@@ -11,12 +11,11 @@ function landing(element){
     element.style.display="flex";
 }
 
-let lastTitle = landingTitle.length-1;
-
-window.onload = function(){
+window.onload = setTimout(function(){
     landingTitle.forEach(item => item.style.opacity="1");
     landing(landingIcon);
     landing(landingSubTitle);
+    ,1000)
 }
 
 const isInViewport = el => {
@@ -47,9 +46,4 @@ window.onscroll = function() {
     }else{
         landingContainer.style.transform='translateY(' + (window.pageYOffset * 0.2) + 'px)';
     }
-}
-
-function shutUp(){
-    document.querySelectorAll('.is-active').forEach(element => element.classList.remove('is-active'));
-    document.querySelectorAll('.sliding').forEach(item => item.classList.remove('sliding'));
 }
