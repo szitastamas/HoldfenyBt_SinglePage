@@ -412,6 +412,10 @@ footer > a {
     background-size: cover;
     background-attachment: initial;
   }
+  
+   .slider-text {
+    font-size: 1.4rem;
+  }
 
   .events-container {
     margin-bottom: 18rem;
