@@ -43,7 +43,8 @@ window.onscroll = () => {
 
   sliderText.style.transform =
     'translateY(' + (-450 + window.pageYOffset / 2.5) + 'px)';
-  sliderText.style.opacity = 0 + window.pageYOffset / 1000;
+  sliderText.style.opacity =
+    0 + ((window.pageYOffset / 1000) * window.pageYOffset) / 1500;
 
   if (window.innerWidth > 868) {
     landingContainer.style.transform =
