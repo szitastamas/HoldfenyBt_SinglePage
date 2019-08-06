@@ -40,7 +40,7 @@ window.onscroll = () => {
     eventCards.style.transform = 'none';
     eventCards.style.opacity = '1';
   }
-  if (window.innerWidth < 1024 && window.innerWidth > 740) {
+  if (window.innerWidth < 1024 && window.innerWidth > 580) {
     sliderText.style.transform = 'none';
   } else {
     sliderText.style.transform =
