@@ -40,12 +40,14 @@ window.onscroll = () => {
     eventCards.style.transform = 'none';
     eventCards.style.opacity = '1';
   }
-
-  sliderText.style.transform =
-    'translateY(' + (-450 + window.pageYOffset / 2.5) + 'px)';
-  sliderText.style.opacity =
-    0 + ((window.pageYOffset / 1000) * window.pageYOffset) / 1500;
-
+  if (window.innerWidth < 1024 && window.innerWidth > 740) {
+    sliderText.style.transform = 'none';
+  } else {
+    sliderText.style.transform =
+      'translateY(' + (-450 + window.pageYOffset / 2.5) + 'px)';
+    sliderText.style.opacity =
+      0 + ((window.pageYOffset / 1000) * window.pageYOffset) / 1500;
+  }
   if (window.innerWidth > 868) {
     landingContainer.style.transform =
       'translateY(' + window.pageYOffset * 0.6 + 'px)';
