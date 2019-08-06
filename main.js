@@ -5,6 +5,8 @@ const landingSubTitle = document.querySelector('.landing-subtitle');
 const landingIcon = document.querySelector('.arrow-down');
 const eventsContainer = document.querySelector('.events-container');
 const eventCards = document.querySelector('.event-cards');
+const sliderText = document.querySelector('.slider-text');
+const sliderContainer = document.querySelector('.slider-container');
 
 function landing(element) {
   element.style.opacity = '1';
@@ -38,6 +40,10 @@ window.onscroll = () => {
     eventCards.style.transform = 'none';
     eventCards.style.opacity = '1';
   }
+
+  sliderText.style.transform =
+    'translateY(' + (-450 + window.pageYOffset / 2.5) + 'px)';
+  sliderText.style.opacity = 0 + window.pageYOffset / 1000;
 
   if (window.innerWidth > 868) {
     landingContainer.style.transform =
