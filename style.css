@@ -72,7 +72,7 @@ body {
   padding: 4rem 0rem;
 }
 
-#landing-section > .landing-text-container > h1 > .landing-text {
+.landing-text {
   font-size: 5.5rem;
   font-weight: 600;
   padding: 0rem 0.4rem;
@@ -80,20 +80,19 @@ body {
   transition: 400ms opacity ease-in-out 500ms;
 }
 
-#landing-section > .landing-text-container > h1 > .landing-text.title-show {
-  opacity: 1;
-}
-
-#landing-section > .landing-text-container > h1 > .landing-text:nth-child(9) {
-  padding-left: 2rem;
-}
-
-#landing-section > .landing-text-container > .landing-subtitle {
+.landing-subtitle {
   padding: 0 0 1rem 0;
   font-weight: 400;
   font-size: 2rem;
   opacity: 0;
   transition: all 400ms ease-in-out 1000ms;
+}
+.title-show {
+  opacity: 1;
+}
+
+#landing-section > .landing-text-container > h1 > .landing-text:nth-child(9) {
+  padding-left: 2rem;
 }
 
 #landing-section > .landing-text-container > .arrow-down {
