@@ -12,7 +12,6 @@ function landing(element) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  //landing(landingSubTitle);
   landingSubTitle.classList.add('title-show');
   landing(landingIcon);
   landingTitle.forEach(item => item.classList.add('title-show'));
@@ -47,4 +46,7 @@ window.onscroll = () => {
     landingContainer.style.transform =
       'translateY(' + window.pageYOffset * 0.2 + 'px)';
   }
+
+  var YOffset = window.pageYOffset;
+  landingContainer.style.opacity = 1 - YOffset / 700;
 };
