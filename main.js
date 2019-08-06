@@ -11,11 +11,11 @@ function landing(element) {
   element.style.display = 'flex';
 }
 
-window.onload = () => {
-  landingTitle.forEach(item => (item.style.opacity = '1'));
-  landing(landingIcon);
-  landing(landingSubTitle);
-};
+window.addEventListener('DOMContentLoaded', () => {
+  landing(landingSubTitle),
+    landing(landingIcon),
+    landingTitle.forEach(item => item.classList.add('title-show'));
+});
 
 const isInViewport = el => {
   const rect = el.getBoundingClientRect();
@@ -28,7 +28,7 @@ const isInViewport = el => {
   );
 };
 
-window.onscroll = function() {
+window.onscroll = () => {
   if (isInViewport(aboutContainer)) {
     aboutContainer.style.transform = 'none';
     aboutContainer.style.opacity = '1';
