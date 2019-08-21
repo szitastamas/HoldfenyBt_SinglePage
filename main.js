@@ -14,6 +14,7 @@ function landing(element) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('loading-screen').remove();
   landingSubTitle.classList.add('title-show');
   landing(landingIcon);
   landingTitle.forEach(item => item.classList.add('title-show'));
