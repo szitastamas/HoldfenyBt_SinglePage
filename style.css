@@ -21,6 +21,50 @@ body {
   display: none;
 }
 
+/* LOADING */
+
+#loading-screen{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  z-index: 50;
+}
+
+#loading{
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+.loading-dots{
+  animation: fadingDots 1200ms infinite;
+  opacity: 0;
+}
+
+@keyframes fadingDots{
+
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.loading-dots:nth-child(2){
+  animation-delay: 400ms;
+}
+
+.loading-dots:nth-child(3){
+  animation-delay: 800ms;
+}
+
 /* LANDING SECTION */
 
 #landing-section {
