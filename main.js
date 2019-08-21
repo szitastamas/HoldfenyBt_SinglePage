@@ -13,11 +13,8 @@ function landing(element) {
   element.style.display = 'flex';
 }
 
-window.onload = () => {
-    document.getElementById('loading-screen').remove();
-}
-
 window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {document.getElementById('loading-screen').remove();},500);
   landingSubTitle.classList.add('title-show');
   landing(landingIcon);
   landingTitle.forEach(item => item.classList.add('title-show'));
