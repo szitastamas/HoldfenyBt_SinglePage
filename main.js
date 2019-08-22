@@ -14,7 +14,7 @@ function landing(element) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {document.getElementById('loading-screen').remove();},500);
+  setTimeout(() => {document.getElementById('loading-screen').remove();},300);
   landingSubTitle.classList.add('title-show');
   landing(landingIcon);
   landingTitle.forEach(item => item.classList.add('title-show'));
@@ -51,10 +51,10 @@ window.onscroll = () => {
   }
   if (window.innerWidth > 868) {
     landingContainer.style.transform =
-      'translateY(' + window.pageYOffset * 0.6 + 'px)';
+      'translate(-50%,' + window.pageYOffset * 0.6 + 'px)';
   } else {
     landingContainer.style.transform =
-      'translateY(' + window.pageYOffset * 0.2 + 'px)';
+      'translate(-50%,' + window.pageYOffset * 0.2 + 'px)';
   }
 
   var YOffset = window.pageYOffset;
