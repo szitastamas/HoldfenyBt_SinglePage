@@ -32,7 +32,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(75,75,75);
+  background: rgb(75, 75, 75);
   z-index: 50;
 }
 
@@ -87,7 +87,7 @@ body {
   height: 100%;
   width: 100%;
   background: url(img/firework1.jpg) no-repeat center
-    bottom/cover;
+    center/cover;
   background-attachment: fixed;
   z-index: -1;
 }
@@ -110,10 +110,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translatex(-50%);
+  background: linear-gradient(to bottom, rgba(15, 15, 15, .3), rgba(15, 15, 15, .75), rgba(15, 15, 15, .9), 
+  rgba(15, 15, 15, .75), rgba(15, 15, 15, .3));
+  padding: 2rem;
 }
 
 #landing-section > .landing-text-container > h1 {
-  padding: 4rem 0rem;
+  padding: 2rem 3rem;
 }
 
 .landing-text {
@@ -315,7 +322,7 @@ body {
 /* EVENT SECTION */
 
 .events-container {
-  height: 520px;
+  height: 530px;
   background: url(img/photos-by-lanty-O38Id_cyV4M-unsplash.jpg) no-repeat center
     center/cover;
   background-attachment: fixed;
@@ -425,6 +432,10 @@ footer > a {
     background-attachment: initial;
   }
 
+  .slider-text {
+    font-size: 1.4rem;
+  }
+
   .events-container {
     background-attachment: initial;
   }
@@ -455,10 +466,6 @@ footer > a {
   .slider {
     background-size: cover;
     background-attachment: initial;
-  }
-  
-   .slider-text {
-    font-size: 1.4rem;
   }
 
   .events-container {
