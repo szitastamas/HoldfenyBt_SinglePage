@@ -117,6 +117,8 @@ body {
   background: linear-gradient(to bottom, rgba(15, 15, 15, .3), rgba(15, 15, 15, .75), rgba(15, 15, 15, .9), 
   rgba(15, 15, 15, .75), rgba(15, 15, 15, .3));
   padding: 2rem;
+  z-index: -1;
+  width: 100%;
 }
 
 #landing-section > .landing-text-container > h1 {
@@ -124,7 +126,7 @@ body {
 }
 
 .landing-text {
-  font-size: 5.5rem;
+  font-size: 4rem;
   font-weight: 600;
   padding: 0rem 0.4rem;
   opacity: 0;
@@ -221,8 +223,7 @@ body {
 
 #main-content-container {
   background: whitesmoke;
-  padding: 1rem;
-  margin: 0 2rem;
+  padding: 1rem 2rem;
 }
 
 /* ABOUT SECTION */
@@ -232,7 +233,7 @@ body {
   opacity: 0;
   transform: translateY(20px);
   transition: 400ms all ease-in-out 150ms;
-  z-index: 3;
+  z-index: 6;
 }
 
 .about-text {
@@ -413,15 +414,26 @@ footer > a {
 /* MEDIA QUERIES */
 
 @media (max-width: 868px) {
+
+
+  .landing-text-container {
+    width: 100%;
+  }
+  
+  #landing-section > .landing-text-container > h1 {
+    padding: 2rem 0rem;
+  }
+
+
   #landing-section > .landing-text-container > h1 > .landing-text {
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 0 0.1rem;
   }
 
   #landing-section > .landing-text-container > .landing-subtitle {
-    width: 75%;
+    width: 80%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   #landing-section > .landing-bg {
@@ -499,15 +511,19 @@ footer > a {
     padding: 0;
   }
 
+  .landing-text-container{
+    padding: 1rem .4rem;
+  }
+
   #landing-section > .landing-text-container > h1 > .landing-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 0 0.1rem;
   }
 
   #landing-section > .landing-text-container > .landing-subtitle {
-    width: 75%;
+    width: 80%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .about-text {
